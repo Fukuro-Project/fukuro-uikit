@@ -2068,7 +2068,10 @@ var BunnyButt = styled.div(templateObject_3$8 || (templateObject_3$8 = __makeTem
     return theme.colors.primary;
 });
 var BunnySlider = styled.div(templateObject_4$6 || (templateObject_4$6 = __makeTemplateObject(["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"], ["\n  position: absolute;\n  left: 14px;\n  width: calc(100% - 14px);\n"])));
-var StyledInput = styled.input(templateObject_5$4 || (templateObject_5$4 = __makeTemplateObject(["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n    background-color: #000;\n  }\n\n  ::-moz-range-thumb {\n    ", "\n    background-color: ", ";\n  }\n\n  ::-ms-thumb {\n    ", "\n    background-color: ", ";\n  }\n"], ["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n    background-color: #000;\n  }\n\n  ::-moz-range-thumb {\n    ", "\n    background-color: ", ";\n  }\n\n  ::-ms-thumb {\n    ", "\n    background-color: ", ";\n  }\n"])), getCursorStyle, getBaseThumbStyles, getBaseThumbStyles, function (_a) {
+var StyledInput = styled.input(templateObject_5$4 || (templateObject_5$4 = __makeTemplateObject(["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n    background-color: ", ";\n  }\n\n  ::-moz-range-thumb {\n    ", "\n    background-color: ", ";\n  }\n\n  ::-ms-thumb {\n    ", "\n    background-color: ", ";\n  }\n"], ["\n  cursor: ", ";\n  height: 32px;\n  position: relative;\n\n  ::-webkit-slider-thumb {\n    ", "\n    background-color: ", ";\n  }\n\n  ::-moz-range-thumb {\n    ", "\n    background-color: ", ";\n  }\n\n  ::-ms-thumb {\n    ", "\n    background-color: ", ";\n  }\n"])), getCursorStyle, getBaseThumbStyles, function (_a) {
+    var theme = _a.theme;
+    return theme.colors.primary;
+}, getBaseThumbStyles, function (_a) {
     var theme = _a.theme;
     return theme.colors.primary;
 }, getBaseThumbStyles, function (_a) {
