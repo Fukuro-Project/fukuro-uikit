@@ -7,7 +7,7 @@ import { TooltipTheme } from "../components/Tooltip/types";
 import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
-export interface PancakeTheme {
+export interface FukuroTheme {
     siteWidth: number;
     isDark: boolean;
     alert: AlertTheme;

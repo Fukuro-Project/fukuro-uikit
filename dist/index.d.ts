@@ -1,4 +1,4 @@
-export * from "./components/Colorplate";
+export * from "./components/ColorPalette";
 export * from "./components/Alert";
 export * from "./components/BalanceInput";
 export * from "./components/Box";
