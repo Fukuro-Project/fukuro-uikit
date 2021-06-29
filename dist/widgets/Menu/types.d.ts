@@ -37,6 +37,7 @@ export interface MenuEntry {
     calloutClass?: string;
     initialOpenState?: boolean;
     status?: LinkStatus;
+    isTopMenu?: boolean;
 }
 export interface PanelProps {
     isDark: boolean;
@@ -52,4 +53,10 @@ export interface NavProps extends PanelProps {
     login?: Login;
     profile?: Profile;
     logout?: () => void;
+}
+export interface TopMenuProps {
+    links: Array<MenuEntry>;
+    pushNav: (isPushed: boolean) => void;
+    isMobile?: boolean;
+    isPushed?: boolean;
 }
