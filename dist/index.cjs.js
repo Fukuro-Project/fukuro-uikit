@@ -4098,7 +4098,6 @@ var TopMenu = function (props) {
     var location = reactRouterDom.useLocation();
     var links = props.links, isMobile = props.isMobile, pushNav = props.pushNav;
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
-    styled.useTheme();
     return (React__default['default'].createElement(Menu$1, null, links.map(function (entry) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (!entry.isTopMenu) {
