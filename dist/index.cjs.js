@@ -4127,7 +4127,7 @@ var UserBlock$1 = React__default['default'].memo(UserBlock, function (prevProps,
         prevProps.logout === nextProps.logout;
 });
 
-var Menu$1 = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: none;\n\t", " {\n\t\tdisplay: flex;\n\t}\n"], ["\n\tdisplay: none;\n\t", " {\n\t\tdisplay: flex;\n\t}\n"])), function (_a) {
+var Menu$1 = styled__default['default'].div(templateObject_1$4 || (templateObject_1$4 = __makeTemplateObject(["\n\tdisplay: none;\n\t", " {\n\t\tdisplay: flex;\n\t\tjustify-content: center;\n\t}\n"], ["\n\tdisplay: none;\n\t", " {\n\t\tdisplay: flex;\n\t\tjustify-content: center;\n\t}\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
@@ -4143,15 +4143,14 @@ MenuItem.defaultProps = {
 };
 var TopMenu = function (props) {
     var location = reactRouterDom.useLocation();
-    var links = props.links, isMobile = props.isMobile, pushNav = props.pushNav;
-    var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
+    var links = props.links;
     return (React__default['default'].createElement(Menu$1, null, links.map(function (entry) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (!entry.isTopMenu) {
             return ("");
         }
         return (React__default['default'].createElement(MenuItem, { key: entry.label, isActive: entry.href === location.pathname, className: calloutClass },
-            React__default['default'].createElement(MenuLink, { href: entry.href, onClick: handleClick }, entry.label)));
+            React__default['default'].createElement(MenuLink, { href: entry.href }, entry.label)));
     })));
 };
 var templateObject_1$4, templateObject_2$1;
@@ -4236,7 +4235,7 @@ var Menu = function (_a) {
     return (React__default['default'].createElement(Wrapper, null,
         React__default['default'].createElement(StyledNav, { showMenu: showMenu },
             React__default['default'].createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
-            React__default['default'].createElement(TopMenu, { links: links, isMobile: isMobile, pushNav: setIsPushed, isPushed: isPushed }),
+            React__default['default'].createElement(TopMenu, { links: links }),
             !!login && !!logout && (React__default['default'].createElement(FlexStyled, null,
                 React__default['default'].createElement(SettingsEntry, null,
                     React__default['default'].createElement(ThemeSwitcher$1, { isDark: isDark, toggleTheme: toggleTheme }),

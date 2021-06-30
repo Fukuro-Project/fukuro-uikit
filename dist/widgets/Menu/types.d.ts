@@ -56,7 +56,4 @@ export interface NavProps extends PanelProps {
 }
 export interface TopMenuProps {
     links: Array<MenuEntry>;
-    pushNav: (isPushed: boolean) => void;
-    isMobile?: boolean;
-    isPushed?: boolean;
 }
