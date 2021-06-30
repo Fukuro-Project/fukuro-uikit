@@ -2655,7 +2655,10 @@ var Handle = styled.div(templateObject_1$i || (templateObject_1$i = __makeTempla
     var theme = _a.theme;
     return theme.toggle.handleBackground;
 }, getScale("handleHeight"), getScale("handleLeft"), getScale("handleTop"), getScale("handleWidth"));
-var Input = styled.input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), Handle, function (_a) {
+var Input = styled.input(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n    background-color: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: ", ";\n    background-color: ", ";\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, getScale("checkedLeft"), function (_a) {
+    var theme = _a.theme;
+    return theme.colors.backgroundAlt;
+}, Handle, function (_a) {
     var theme = _a.theme;
     return theme.shadows.focus;
 }, Handle, function (_a) {
@@ -2898,18 +2901,18 @@ var useParticleBurst = function (options) {
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#1FC7D4",
-    primaryBright: "#53DEE9",
-    primaryDark: "#0098A1",
-    secondary: "#7645D9",
+    primary: "#00448B",
+    primaryBright: "#0062AE",
+    primaryDark: "#00296A",
+    secondary: "#AC8AFF",
     success: "#31D0AA",
     warning: "#FFB237",
 };
 var additionalColors = {
     binance: "#F0B90B",
-    overlay: "#452a7a",
+    overlay: "#475682",
 };
-var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", cardBorder: "#E7E3EB", contrast: "#191326", dropdown: "#F6F6F6", dropdownDeep: "#EEEEEE", invertedContrast: "#FFFFFF", input: "#eeeaf4", inputSecondary: "#d7caec", tertiary: "#EFF4F5", text: "#280D5F", textDisabled: "#BDC2C4", textSubtle: "#7A6EAA", disabled: "#E9EAEB", gradients: {
+var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors), { background: "#FAF9FA", backgroundDisabled: "#E9EAEB", backgroundAlt: "#FFFFFF", cardBorder: "#E7E3EB", contrast: "#191326", dropdown: "#F6F6F6", dropdownDeep: "#EEEEEE", invertedContrast: "#FFFFFF", input: "#F0FAFF", inputSecondary: "#0082D1", tertiary: "#EFF4F5", text: "#402E32", textDisabled: "#BDC2C4", textSubtle: "#0062AE", disabled: "#E9EAEB", gradients: {
         bubblegum: "linear-gradient(139.73deg, #E5FDFF 0%, #F3EFFF 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #F3EFFF 0%, #E5FDFF 100%)",
         cardHeader: "linear-gradient(111.68deg, #F2ECF2 0%, #E8F2F6 100%)",
@@ -2918,7 +2921,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), additionalColors),
         violetAlt: "linear-gradient(180deg, #CBD7EF 0%, #9A9FD0 100%)",
         gold: "linear-gradient(180deg, #FFD800 0%, #FDAB32 100%)",
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { secondary: "#9A6AFF", background: "#08060B", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#372F47", inputSecondary: "#262130", primaryDark: "#0098A1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#B8ADD2", disabled: "#524B63", gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), additionalColors), { primary: "#01A3F6", secondary: "#AC8AFF", background: "#402E32", backgroundDisabled: "#3c3742", backgroundAlt: "#27262c", cardBorder: "#383241", contrast: "#FFFFFF", dropdown: "#1E1D20", dropdownDeep: "#100C18", invertedContrast: "#191326", input: "#004E97", inputSecondary: "#0082D1", tertiary: "#353547", text: "#F4EEFF", textDisabled: "#666171", textSubtle: "#01A3F6", disabled: "#524B63", gradients: {
         bubblegum: "linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)",
         inverseBubblegum: "linear-gradient(139.73deg, #3D2A54 0%, #313D5C 100%)",
         cardHeader: "linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)",
@@ -2972,10 +2975,10 @@ var dark$4 = {
 };
 
 var light$3 = {
-    handleBackground: lightColors.backgroundAlt,
+    handleBackground: lightColors.primary,
 };
 var dark$3 = {
-    handleBackground: darkColors.backgroundAlt,
+    handleBackground: darkColors.primary,
 };
 
 var light$2 = {
@@ -4067,9 +4070,12 @@ var Menu$1 = styled.div(templateObject_1$4 || (templateObject_1$4 = __makeTempla
     var theme = _a.theme;
     return theme.mediaQueries.md;
 });
-var MenuItem = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n\tborder-radius: 32px;\t\n\tpadding: 12px 24px;\n\tbackground-color: ", ";\n\n\t&:hover {\n\t\tbackground-color: #efefef;\n\t}\n"], ["\n\tborder-radius: 32px;\t\n\tpadding: 12px 24px;\n\tbackground-color: ", ";\n\n\t&:hover {\n\t\tbackground-color: #efefef;\n\t}\n"])), function (_a) {
-    var isActive = _a.isActive;
-    return isActive ? '#efefef' : '';
+var MenuItem = styled.div(templateObject_2$1 || (templateObject_2$1 = __makeTemplateObject(["\n\tposition: relative;\n\tpadding: 12px 24px;\n\tcolor: ", ";\n\n\t&:before {\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tbottom: 0;\n\t\tleft: 1rem;\n\t\tright: 1rem;\n\t\theight: 0.2rem;\n\t\tbackground-color: ", ";\n\t}\n\t"], ["\n\tposition: relative;\n\tpadding: 12px 24px;\n\tcolor: ", ";\n\n\t&:before {\n\t\tcontent: \"\";\n\t\tposition: absolute;\n\t\tbottom: 0;\n\t\tleft: 1rem;\n\t\tright: 1rem;\n\t\theight: 0.2rem;\n\t\tbackground-color: ", ";\n\t}\n\t"])), function (_a) {
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primary : theme.colors.primary;
+}, function (_a) {
+    var theme = _a.theme, isActive = _a.isActive;
+    return isActive ? theme.colors.primary : undefined;
 });
 MenuItem.defaultProps = {
     isActive: false,
@@ -4078,6 +4084,7 @@ var TopMenu = function (props) {
     var location = useLocation();
     var links = props.links, isMobile = props.isMobile, pushNav = props.pushNav;
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
+    useTheme();
     return (React.createElement(Menu$1, null, links.map(function (entry) {
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (!entry.isTopMenu) {
